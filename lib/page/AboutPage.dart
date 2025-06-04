@@ -17,13 +17,25 @@ class AboutPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('$years년차 Android, Flutter 개발자',
+            Text('$years years experienced Android and Flutter developer',
               style: const TextStyle(
                 decoration: TextDecoration.none, // <-- 밑줄 제거
                 fontFamily: 'esamanru',
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: ColorTheme.mainColor_9c4b3b,
+              ),
+            ),
+
+            const SizedBox(height: 40,),
+
+            const Text('I want to develop what I love, and find joy in the process.',
+              style: TextStyle(
+                decoration: TextDecoration.none, // <-- 밑줄 제거
+                fontFamily: 'pretendard',
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: ColorTheme.mainColor_9c4b3b,
               ),
             ),
 
@@ -84,6 +96,18 @@ class AboutPage extends StatelessWidget {
               fontWeight: FontWeight.w400,
               color: ColorTheme.mainColor_9c4b3b,
               decoration: TextDecoration.none, // <-- 밑줄 제거
+              ),
+            ),
+
+            const SizedBox(height: 30,),
+
+            const Text('Tools & Platforms : Git, Firebase, Figma, Android Studio, Slack, Notion',
+              style: TextStyle(
+                fontFamily: 'pretendard',
+                fontSize: 18,
+                fontWeight: FontWeight.w400,
+                color: ColorTheme.mainColor_9c4b3b,
+                decoration: TextDecoration.none,
               ),
             ),
 
