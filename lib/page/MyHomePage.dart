@@ -4,6 +4,8 @@ import 'package:flutter_web_about/theme/color_theme.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../data/TimelineItem.dart';
+
 class MyHomePage extends StatefulWidget {
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -251,6 +253,7 @@ class ProjectBox extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     print("Route");
+                    context.go('/project');
                   },
 
                   child: const Text(
@@ -377,22 +380,7 @@ class ContactBox extends StatelessWidget {
 
 }
 
-class TimelineItem {
-  final String year;
-  final String description;
-
-  TimelineItem(this.year, this.description);
-}
-
 class TimelineWidget extends StatelessWidget {
-
-  final List<TimelineItem> items = [
-    TimelineItem('2024.07 - ', 'Everex'),
-    TimelineItem('2023.12 - 2024.05', '하렉스인포텍'),
-    TimelineItem('2022.05 - 2023.11', '온앤오프 컴퍼니'),
-    TimelineItem('2022.02 - 2022.05', '신성아이씨티'),
-    TimelineItem('2020.09 - 2022.01', '주식회사 고운우리'),
-  ];
 
   @override
   Widget build(BuildContext context) {
